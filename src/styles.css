@@ -1,3 +1,16 @@
+/* Reset, To be removed later */
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Roboto:wght@400;500&display=swap");
+
+body.ar {
+  font-family: Almarai;
+}
+body {
+  font-family: Roboto;
+}
+h5 {
+  line-height: 1.8em;
+}
+
 /* Card */
 .cards-container .card .card-subtitle,
 .cards-container .card .card-title {
@@ -88,4 +101,19 @@
   padding: 2em;
 }
 
+/* End Result */
+.result-card img {
+  max-width: 100%;
+}
+.result-card a {
+  padding: 1em;
+  background-color: #03a9f4;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  margin: 30px auto;
+}
 /* RTL */
