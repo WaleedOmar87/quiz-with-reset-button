@@ -1,0 +1,89 @@
+/* Card */
+.cards-container .card .card-subtitle,
+.cards-container .card .card-title {
+  margin-bottom: 1em !important;
+  display: flex;
+  justify-content: center;
+}
+.cards-container .card .card-title {
+  font-size: 1.5em;
+}
+.cards-container .card ul.list-group li.list-group-item {
+  cursor: pointer !important;
+  display: block !important;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+.cards-container .card ul li.active {
+  background-color: #03a9f4;
+  border: none;
+}
+
+/* Slides */
+.cards-container {
+  position: relative;
+  margin-top: 1em;
+}
+.cards-container .cards {
+  position: relative;
+  min-height: 500px;
+}
+.cards-container .card {
+  position: absolute;
+  transform: scale(0.9);
+  opacity: 0;
+  z-index: -99;
+  transition: all 500ms;
+  top: 0px;
+  left: 0px;
+  max-width: 100%;
+  border: 3px solid #03a9f4;
+  box-shadow: 0 0 10px 0 rgb(3, 169, 244, 0.05);
+}
+.cards-container .card.hidden {
+  opacity: 0;
+  z-index: -99;
+}
+.cards-container .card.active {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Buttons */
+.cards-container .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 60px;
+  margin-top: 2em;
+  position: relative;
+  z-index: 1;
+}
+.cards-container .buttons .button {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.cards-container .buttons svg {
+  fill: #03a9f4;
+  width: 12px;
+  height: 12px;
+}
+.cards-container .buttons .prev {
+  transform: rotate(-180deg);
+}
+.cards-container .card {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  text-align: center;
+  padding: 2em;
+}
